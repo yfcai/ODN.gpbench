@@ -59,10 +59,6 @@ trait BinTrees {
           // case rhs is power of 2
           if (0 == (n & halfPow)) to - halfPow
           // case lhs is power of 2
-          // subcase perfect binary tree
-          else if (n == pow)
-            from + halfPow
-          // subcase imperfect binary tree
           else
             from + pow
         Bin(loop(from, mid), loop(mid, to))
