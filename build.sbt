@@ -2,6 +2,8 @@
 
 scalaSource in Test := baseDirectory.value
 
+scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature")
+
 // LIBRARIES
 
 resolvers ++= Seq(
